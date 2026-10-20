@@ -1,0 +1,183 @@
+{
+  "users": [
+    {
+      "id": "u1",
+      "email": "admin@test.com",
+      "password": "admin123",
+      "role": "ADMIN",
+      "name": "Admin Principal"
+    },
+    {
+      "id": "u2",
+      "email": "teacher1@test.com",
+      "password": "teacher123",
+      "role": "TEACHER",
+      "name": "Fatima Zahra Mansouri"
+    },
+    {
+      "id": "u3",
+      "email": "teacher2@test.com",
+      "password": "teacher123",
+      "role": "TEACHER",
+      "name": "Mehdi Alami"
+    },
+    {
+      "id": "u4",
+      "email": "student1@test.com",
+      "password": "student123",
+      "role": "STUDENT",
+      "name": "Yassine El Amrani"
+    }
+  ],
+  "students": [
+    {
+      "id": "s1",
+      "firstName": "Yassine",
+      "lastName": "El Amrani",
+      "userId": "u4"
+    },
+    {
+      "id": "s2",
+      "firstName": "Salma",
+      "lastName": "Benjelloun",
+      "userId": null
+    },
+    {
+      "id": "s3",
+      "firstName": "Omar",
+      "lastName": "Idrissi",
+      "userId": null
+    }
+  ],
+  "grades": [
+    {
+      "id": "g1",
+      "studentId": "s1",
+      "subject": "Algorithmique",
+      "value": 12,
+      "version": 6,
+      "lastAuthor": "Fatima Zahra Mansouri",
+      "lastUpdatedAt": "2026-10-20T14:23:00.017Z"
+    },
+    {
+      "id": "g2",
+      "studentId": "s1",
+      "subject": "Bases de données",
+      "value": 15,
+      "version": 1,
+      "lastAuthor": "Fatima Zahra Mansouri",
+      "lastUpdatedAt": "2026-10-18T11:00:00.000Z"
+    },
+    {
+      "id": "g3",
+      "studentId": "s2",
+      "subject": "Algorithmique",
+      "value": 10,
+      "version": 1,
+      "lastAuthor": "Mehdi Alami",
+      "lastUpdatedAt": "2026-10-18T12:00:00.000Z"
+    },
+    {
+      "id": "g4",
+      "studentId": "s2",
+      "subject": "Bases de données",
+      "value": 14,
+      "version": 1,
+      "lastAuthor": "Mehdi Alami",
+      "lastUpdatedAt": "2026-10-18T12:30:00.000Z"
+    },
+    {
+      "id": "g5",
+      "studentId": "s3",
+      "subject": "Programmation Web",
+      "value": 18,
+      "version": 1,
+      "lastAuthor": "Fatima Zahra Mansouri",
+      "lastUpdatedAt": "2026-10-18T13:00:00.000Z"
+    },
+    {
+      "id": "g6",
+      "studentId": "s3",
+      "subject": "Réseaux informatiques",
+      "value": 11,
+      "version": 1,
+      "lastAuthor": "Mehdi Alami",
+      "lastUpdatedAt": "2026-10-18T13:30:00.000Z"
+    },
+    {
+      "id": "g1792506366683",
+      "studentId": "s1",
+      "subject": "python",
+      "value": 19,
+      "version": 1,
+      "lastAuthor": "Admin Principal",
+      "lastUpdatedAt": "2026-10-20T14:26:06.683Z"
+    },
+    {
+      "id": "g1792506725037",
+      "studentId": "s1",
+      "subject": "linux",
+      "value": 18,
+      "version": 1,
+      "lastAuthor": "Fatima Zahra Mansouri",
+      "lastUpdatedAt": "2026-10-20T14:32:05.037Z"
+    }
+  ],
+  "auditLog": [
+    {
+      "id": "a1",
+      "studentId": "s1",
+      "gradeId": "g1",
+      "oldValue": 8,
+      "newValue": 10,
+      "author": "Fatima Zahra Mansouri",
+      "timestamp": "2026-10-17T09:00:00.000Z",
+      "version": 2,
+      "type": "UPDATE"
+    },
+    {
+      "id": "a2",
+      "studentId": "s1",
+      "gradeId": "g1",
+      "oldValue": 10,
+      "newValue": 11,
+      "author": "Mehdi Alami",
+      "timestamp": "2026-10-17T14:00:00.000Z",
+      "version": 3,
+      "type": "UPDATE"
+    },
+    {
+      "id": "a3",
+      "studentId": "s1",
+      "gradeId": "g1",
+      "oldValue": 11,
+      "newValue": 12,
+      "author": "Fatima Zahra Mansouri",
+      "timestamp": "2026-10-18T10:00:00.000Z",
+      "version": 4,
+      "type": "UPDATE"
+    },
+    {
+      "id": "a1792506180004",
+      "studentId": "s1",
+      "gradeId": "g1",
+      "oldValue": 12,
+      "newValue": 16,
+      "author": "Fatima Zahra Mansouri",
+      "timestamp": "2026-10-20T14:23:00.004Z",
+      "version": 5,
+      "type": "UPDATE"
+    },
+    {
+      "id": "a1792506180017",
+      "studentId": "s1",
+      "gradeId": "g1",
+      "oldValue": 16,
+      "newValue": 12,
+      "author": "Fatima Zahra Mansouri",
+      "timestamp": "2026-10-20T14:23:00.017Z",
+      "version": 6,
+      "type": "UNDO"
+    }
+  ]
+}
